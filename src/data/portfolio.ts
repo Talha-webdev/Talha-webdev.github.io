@@ -1,7 +1,6 @@
 export const profile = {
   name: "Muhammad Talha",
   email: "6bcs11@gmail.com",
-  // Place profile photo in /public and set the path, e.g. "/profile.jpg"
   photo: "/profile.jpeg",
   socials: {
     github: "https://github.com/Talha-webdev",
@@ -9,28 +8,70 @@ export const profile = {
   },
 }
 
+export const hero = {
+  label: "Computer Science Graduate",
+  title: "Machine Learning & Software Developer",
+  description:
+    "Computer Science graduate focused on building practical applications with Python, PyTorch, React, and modern web technologies. I develop machine learning systems and full-stack web applications that solve real-world problems.",
+  techLine: ["Python", "PyTorch", "React", "FastAPI"],
+  status: "Focused on Machine Learning, AI & Software Development",
+}
+
+export interface Experience {
+  id: string
+  role: string
+  project: string
+  period: string
+  description: string
+  technologies: string[]
+  github: string
+  demo: string | null
+}
+
+export const experiences: Experience[] = [
+  {
+    id: "phishguard-exp",
+    role: "Machine Learning Developer",
+    project: "PhishGuard",
+    period: "2025 – 2026",
+    description:
+      "Designed and developed a phishing email detection system using a BiLSTM neural network. Built the end-to-end pipeline from model training with PyTorch to a REST API with FastAPI and a React frontend for real-time email classification.",
+    technologies: ["Python", "PyTorch", "BiLSTM", "FastAPI", "React"],
+    github: "#",
+    demo: null,
+  },
+  {
+    id: "gym-exp",
+    role: "Full-Stack Developer",
+    project: "Project GYM",
+    period: "2024 – 2025",
+    description:
+      "Built a full-stack fitness platform with membership management, premium content delivery, blogs, and administrative tools. Implemented the backend API, database schema, and responsive frontend interface.",
+    technologies: ["React", "FastAPI", "PostgreSQL", "Cloudinary"],
+    github: "https://github.com/Talha-webdev/projectGym",
+    demo: null,
+  },
+]
+
 export interface Project {
   id: string
   name: string
   title: string
   description: string
   technologies: string[]
-  // Icon key used in the card visual (no screenshot available yet)
   icon: "shield" | "dumbbell"
-  // Place screenshot in /public/projects and set path, e.g. "/projects/phishguard.png"
   image: string
   github: string
   demo: string | null
 }
 
-// NOTE: `github`/`demo` use "#" as placeholders. Replace with real URLs later.
 export const projects: Project[] = [
   {
     id: "phishguard",
     name: "PhishGuard",
     title: "Phishing Email Detection System",
     description:
-      "PhishGuard is a machine-learning based phishing email detection system that uses a BiLSTM model to classify emails and integrates the trained model with an API and frontend.",
+      "A machine learning application that detects phishing emails using a BiLSTM neural network. The system classifies emails in real-time through a trained model served via a REST API with a clean web interface.",
     technologies: ["Python", "PyTorch", "BiLSTM", "FastAPI", "React"],
     icon: "shield",
     image: "",
@@ -42,7 +83,7 @@ export const projects: Project[] = [
     name: "Project GYM",
     title: "Fitness Membership & Content Platform",
     description:
-      "A fitness platform featuring membership functionality, premium content, blogs, gallery, comments, and administrative management.",
+      "A full-stack fitness platform with membership management, premium content, blogs, gallery, and administrative tools. Built with a modern React frontend and FastAPI backend.",
     technologies: ["React", "FastAPI", "PostgreSQL", "Cloudinary"],
     icon: "dumbbell",
     image: "",
@@ -57,15 +98,24 @@ export interface SkillCategory {
 }
 
 export const skillCategories: SkillCategory[] = [
-  { title: "Languages", skills: ["Python", "JavaScript", "HTML", "CSS"] },
-  { title: "Frontend", skills: ["React", "Tailwind CSS"] },
-  { title: "Backend", skills: ["FastAPI"] },
   {
-    title: "Machine Learning / Data",
+    title: "Programming",
+    skills: ["Python", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    title: "Machine Learning & Data",
     skills: ["PyTorch", "Pandas", "NumPy", "Scikit-learn"],
   },
   {
-    title: "Database / Tools",
+    title: "Frontend",
+    skills: ["React", "Tailwind CSS"],
+  },
+  {
+    title: "Backend",
+    skills: ["FastAPI"],
+  },
+  {
+    title: "Database & Tools",
     skills: ["PostgreSQL", "Git", "GitHub"],
   },
 ]

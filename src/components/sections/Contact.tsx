@@ -9,12 +9,11 @@ export function Contact() {
   const linkedin = profile.socials.linkedin
 
   return (
-    <Section id="contact" title="Let's Work Together">
+    <Section id="contact" title="Get in Touch">
       <div className="rounded-xl border border-border bg-surface p-8 shadow-card">
-        <p className="max-w-2xl text-base leading-relaxed text-muted">
-          I am open to opportunities, collaborations, freelance projects, and
-          interesting development work. Feel free to get in touch using any of the
-          options below.
+        <p className="max-w-2xl text-[15px] leading-relaxed text-muted">
+          I'm open to opportunities, collaborations, and interesting development
+          work. Feel free to reach out through any of the channels below.
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -23,7 +22,7 @@ export function Contact() {
             className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent-hover"
           >
             <Mail size={16} />
-            Send Email
+            Email
           </a>
           <a
             href={github || "#"}

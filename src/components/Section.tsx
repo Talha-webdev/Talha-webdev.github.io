@@ -10,10 +10,10 @@ export function Section({ id, title, children }: SectionProps) {
   return (
     <section
       id={id}
-      className="mx-auto w-full max-w-5xl scroll-mt-24 px-6 py-16"
+      className="mx-auto w-full max-w-5xl scroll-mt-24 px-6 py-20"
     >
       {title && (
-        <h2 className="mb-8 text-2xl font-semibold tracking-tight text-foreground">
+        <h2 className="mb-10 text-xl font-semibold tracking-tight text-foreground">
           {title}
         </h2>
       )}

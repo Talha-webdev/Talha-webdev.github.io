@@ -11,7 +11,7 @@ const iconMap: Record<Project["icon"], typeof Shield> = {
 export function Projects() {
   return (
     <Section id="projects" title="Projects">
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-5 sm:grid-cols-2">
         {projects.map((project) => (
           <article
             key={project.id}
@@ -25,10 +25,10 @@ export function Projects() {
                   className="h-full w-full object-cover"
                 />
               ) : (
-                <div className="flex flex-col items-center gap-3 text-center">
+                <div className="flex flex-col items-center gap-2 text-center">
                   {(() => {
                     const Icon = iconMap[project.icon] ?? Shield
-                    return <Icon size={44} strokeWidth={1.5} />
+                    return <Icon size={36} strokeWidth={1.5} />
                   })()}
                   <span className="text-xs font-medium text-muted">
                     {project.name}
@@ -37,33 +37,33 @@ export function Projects() {
               )}
             </div>
 
-            <div className="flex flex-1 flex-col p-6">
-              <h3 className="text-lg font-semibold text-foreground">
+            <div className="flex flex-1 flex-col p-5">
+              <h3 className="text-base font-semibold text-foreground">
                 {project.title}
               </h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
                 {project.description}
               </p>
 
-              <ul className="mt-4 flex flex-wrap gap-2">
+              <ul className="mt-3 flex flex-wrap gap-1.5">
                 {project.technologies.map((tech) => (
                   <li
                     key={tech}
-                    className="rounded-full border border-border bg-background px-3 py-1 text-xs text-muted"
+                    className="rounded-md border border-border bg-background px-2.5 py-0.5 text-xs text-muted"
                   >
                     {tech}
                   </li>
                 ))}
               </ul>
 
-              <div className="mt-6 flex flex-wrap items-center gap-3">
+              <div className="mt-5 flex flex-wrap items-center gap-2.5">
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
                 >
-                  <GithubIcon size={16} />
+                  <GithubIcon size={15} />
                   GitHub
                 </a>
                 {project.demo && (
@@ -71,9 +71,9 @@ export function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent-hover"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent-hover"
                   >
-                    <ExternalLink size={16} />
+                    <ExternalLink size={15} />
                     Live Demo
                   </a>
                 )}

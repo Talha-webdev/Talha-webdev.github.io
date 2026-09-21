@@ -5,6 +5,7 @@ import { GithubIcon } from "../GithubIcon"
 
 const links = [
   { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Education", href: "#education" },
@@ -17,17 +18,17 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-surface/90 backdrop-blur">
-      <nav className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-3.5">
         <a
           href="#top"
           onClick={() => setOpen(false)}
-          className="text-lg font-semibold tracking-tight text-foreground"
+          className="text-base font-semibold tracking-tight text-foreground"
         >
           Muhammad Talha
         </a>
 
         <div className="flex items-center gap-4">
-          <ul className="hidden items-center gap-7 text-sm text-muted md:flex">
+          <ul className="hidden items-center gap-6 text-sm text-muted md:flex">
             {links.map((link) => (
               <li key={link.href}>
                 <a
@@ -47,7 +48,7 @@ export function Navbar() {
             rel="noreferrer"
             aria-label="GitHub"
           >
-            <GithubIcon size={20} />
+            <GithubIcon size={18} />
           </a>
 
           <button
@@ -57,7 +58,7 @@ export function Navbar() {
             aria-expanded={open}
             className="text-muted transition-colors hover:text-accent md:hidden"
           >
-            {open ? <X size={22} /> : <Menu size={22} />}
+            {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </nav>
@@ -70,7 +71,7 @@ export function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block py-3 transition-colors hover:text-accent"
+                  className="block py-2.5 transition-colors hover:text-accent"
                 >
                   {link.label}
                 </a>
