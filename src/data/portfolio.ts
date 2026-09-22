@@ -10,9 +10,9 @@ export const profile = {
 
 export const hero = {
   label: "Computer Science Graduate",
-  title: "Machine Learning & Software Developer",
+  title: "AI | Machine Learning Engineer & Web Developer",
   description:
-    "Computer Science graduate focused on building practical applications with Python, PyTorch, React, and modern web technologies. I develop machine learning systems and full-stack web applications that solve real-world problems.",
+    "Computer Science graduate  building practical applications with Python, PyTorch, React, and modern web technologies. I develop machine learning systems and full-stack web applications that solve real-world problems.",
   techLine: ["Python", "PyTorch", "React", "FastAPI"],
   status: "Focused on Machine Learning, AI & Software Development",
 }
