@@ -14,7 +14,6 @@ export const hero = {
   description:
     "Computer Science graduate  building practical applications with Python, PyTorch, React, and modern web technologies. I develop machine learning systems and full-stack web applications that solve real-world problems.",
   techLine: ["Python", "PyTorch", "React", "FastAPI"],
-  // status: "Focused on Machine Learning, AI & Software Development",
 }
 
 export interface Experience {
