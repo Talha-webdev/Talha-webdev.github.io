@@ -37,7 +37,7 @@ export const experiences: Experience[] = [
     description:
       "Designed and developed a phishing email detection system using a BiLSTM neural network. Built the end-to-end pipeline from model training with PyTorch to a REST API with FastAPI and a React frontend for real-time email classification.",
     technologies: ["Python", "PyTorch", "BiLSTM", "FastAPI", "React"],
-    github: "#",
+    github: "https://github.com/Talha-webdev/PhishGuard",
     demo: null,
   },
   {
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     technologies: ["Python", "PyTorch", "BiLSTM", "FastAPI", "React"],
     icon: "shield",
     image: "",
-    github: "#",
+    github: "https://github.com/Talha-webdev/PhishGuard",
     demo: null,
   },
   {
