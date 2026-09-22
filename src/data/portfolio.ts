@@ -76,7 +76,7 @@ export const projects: Project[] = [
     icon: "shield",
     image: "",
     github: "https://github.com/Talha-webdev/PhishGuard",
-    demo: null,
+    demo: "https://project-gym-rouge.vercel.app/",
   },
   {
     id: "project-gym",
