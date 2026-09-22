@@ -22,7 +22,7 @@ const focusAreas = [
 export function About() {
   return (
     <Section id="about" title="About">
-      <div className="rounded-xl border border-border bg-surface p-8 shadow-card">
+      <div className="rounded-xl border border-border bg-[#1E293B] p-8 shadow-card">
         <p className="max-w-3xl text-[15px] leading-relaxed text-muted">
           I'm a Computer Science graduate focused on building practical software
           and machine learning solutions. My work combines Python and PyTorch for
@@ -36,7 +36,7 @@ export function About() {
           {focusAreas.map(({ icon: Icon, title, text }) => (
             <div
               key={title}
-              className="rounded-lg border border-border bg-background p-5"
+              className="rounded-lg border border-border bg-[#334155] p-5"
             >
               <Icon size={18} className="mb-3 text-accent" strokeWidth={1.5} />
               <h3 className="mb-1.5 text-sm font-semibold text-foreground">

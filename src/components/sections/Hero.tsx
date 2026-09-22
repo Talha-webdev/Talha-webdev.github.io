@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto w-full max-w-5xl scroll-mt-24 px-6 py-20 md:py-24"
+      className="mx-auto w-full max-w-5xl scroll-mt-24 px-6 py-20 md:py-24 bg-[#111827]"
     >
       <div className="grid items-center gap-12 md:grid-cols-[1fr_auto]">
         <div>
@@ -34,7 +34,7 @@ export function Hero() {
               href={github || "#"}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+              className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <GithubIcon size={16} />
               GitHub
@@ -44,7 +44,7 @@ export function Hero() {
           <div className="mt-8 flex items-center gap-2 text-xs text-muted">
             {hero.techLine.map((tech, i) => (
               <span key={tech} className="flex items-center gap-2">
-                {i > 0 && <span className="text-border">•</span>}
+                {i > 0 && <span className="text-muted">•</span>}
                 <span>{tech}</span>
               </span>
             ))}
@@ -55,7 +55,7 @@ export function Hero() {
           <img
             src={profile.photo}
             alt={profile.name}
-            className="aspect-square w-52 rounded-xl border border-border/60 object-cover shadow-soft sm:w-64"
+            className="aspect-square w-52 rounded-xl border border-border object-cover shadow-soft sm:w-64"
           />
         </div>
       </div>

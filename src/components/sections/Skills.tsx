@@ -8,7 +8,7 @@ export function Skills() {
         {skillCategories.map((category) => (
           <div
             key={category.title}
-            className="rounded-xl border border-border bg-surface p-5 shadow-card"
+            className="rounded-xl border border-border bg-[#1E293B] p-5 shadow-card"
           >
             <h3 className="mb-3 text-sm font-semibold text-foreground">
               {category.title}
@@ -17,7 +17,7 @@ export function Skills() {
               {category.skills.map((skill) => (
                 <li
                   key={skill}
-                  className="rounded-md border border-border bg-background px-2.5 py-0.5 text-xs text-muted"
+                  className="rounded-md border border-border bg-[#334155] px-2.5 py-0.5 text-xs text-muted"
                 >
                   {skill}
                 </li>

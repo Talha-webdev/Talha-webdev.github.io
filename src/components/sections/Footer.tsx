@@ -8,7 +8,7 @@ export function Footer() {
   const linkedin = profile.socials.linkedin
 
   return (
-    <footer className="border-t border-border bg-surface">
+    <footer className="border-t border-border bg-[#020617]">
       <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-3 px-6 py-8 text-center">
         <span className="text-sm font-semibold text-foreground">
           {profile.name}

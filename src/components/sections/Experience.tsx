@@ -10,7 +10,7 @@ export function Experience() {
         {experiences.map((exp) => (
           <article
             key={exp.id}
-            className="rounded-xl border border-border bg-surface p-6 shadow-card"
+            className="rounded-xl border border-border bg-[#1E293B] p-6 shadow-card"
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div className="flex items-start gap-3">
@@ -30,7 +30,7 @@ export function Experience() {
                   href={exp.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-3.5 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-border px-3.5 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
                 >
                   <GithubIcon size={14} />
                   Code
@@ -56,7 +56,7 @@ export function Experience() {
               {exp.technologies.map((tech) => (
                 <li
                   key={tech}
-                  className="rounded-md border border-border bg-background px-2.5 py-0.5 text-xs text-muted"
+                  className="rounded-md border border-border bg-[#1E293B] px-2.5 py-0.5 text-xs text-muted"
                 >
                   {tech}
                 </li>

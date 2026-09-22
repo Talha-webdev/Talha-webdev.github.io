@@ -10,7 +10,7 @@ export function Contact() {
 
   return (
     <Section id="contact" title="Get in Touch">
-      <div className="rounded-xl border border-border bg-surface p-8 shadow-card">
+      <div className="rounded-xl border border-border bg-[#1E293B] p-8 shadow-card">
         <p className="max-w-2xl text-[15px] leading-relaxed text-muted">
           I'm open to opportunities, collaborations, and interesting development
           work. Feel free to reach out through any of the channels below.
@@ -28,7 +28,7 @@ export function Contact() {
             href={github || "#"}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+            className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
           >
             <GithubIcon size={16} />
             GitHub
@@ -37,7 +37,7 @@ export function Contact() {
             href={linkedin || "#"}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+            className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
           >
             <Link size={16} />
             LinkedIn

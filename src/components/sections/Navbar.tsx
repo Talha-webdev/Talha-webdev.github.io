@@ -17,7 +17,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-surface/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border bg-[#0F172A]/90 backdrop-blur">
       <nav className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-3.5">
         <a
           href="#top"
@@ -64,7 +64,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-border bg-surface md:hidden">
+        <div className="border-t border-border bg-[#0F172A] md:hidden">
           <ul className="mx-auto flex w-full max-w-5xl flex-col px-6 py-2 text-sm text-muted">
             {links.map((link) => (
               <li key={link.href}>

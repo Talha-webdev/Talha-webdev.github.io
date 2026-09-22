@@ -5,7 +5,7 @@ import { education } from "../../data/portfolio"
 export function Education() {
   return (
     <Section id="education" title="Education">
-      <div className="rounded-xl border border-border bg-surface p-6 shadow-card">
+      <div className="rounded-xl border border-border bg-[#1E293B] p-6 shadow-card">
         <div className="flex items-start gap-3">
           <span className="mt-0.5 text-accent">
             <GraduationCap size={20} strokeWidth={1.5} />
